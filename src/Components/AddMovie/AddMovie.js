@@ -10,8 +10,9 @@ const AddMovie = ({add}) => {
   const handleShow=() => setshow(true);
   const [title,setTitle]=useState("");
   const [description,setDescription]=useState("");
-  const [rate,setRate]=useState("");
+  const [rate,setRate]=useState(1);
   const[posterUrl,setPosterUrl]=useState("");
+  
   //fonction pour l update 
   const handleTitle=(e)=>{
     setTitle(e.target.value);
